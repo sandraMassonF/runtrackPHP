@@ -27,7 +27,7 @@ $float = 15.12;
   </head>
   <body>
   
-  <table>
+  <table style="border: 1px solid black">
   <thead>
     <tr>
       <th scope="col">Type</th>
