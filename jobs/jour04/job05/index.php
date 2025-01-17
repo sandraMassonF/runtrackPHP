@@ -1,3 +1,10 @@
+<!-- Créez un formulaire de connexion de type POST (se demander, pourquoi pas GET ?) ayant deux champs username et password.
+Après validation du formulaire :
+➔ si le username est “John” et le password est “Rambo” afficher “c’est
+pas ma guerre”
+➔ sinon afficher “votre pire cauchemar”-->
+
+
 <?php
 
     if (empty($_POST)){

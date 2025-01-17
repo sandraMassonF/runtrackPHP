@@ -1,3 +1,4 @@
+<!-- Créez un algorithme qui affiche dans un tableau HTML l’ensemble des arguments $_POST et les valeurs associés.-->
 
 <!DOCTYPE html>
 <html lang="en">

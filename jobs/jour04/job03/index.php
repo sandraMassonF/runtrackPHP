@@ -1,5 +1,5 @@
-<!--Développez un algorithme qui affiche le nombre d’arguments $_GET.
-Tips : Pour tester votre code, créez un formulaire html de type GET.-->
+<!--Développez un algorithme qui affiche le nombre d’arguments $_POST.
+Tips : Pour tester votre code, créez un formulaire html de type POST.-->
 
 <?php
 $count = 0;

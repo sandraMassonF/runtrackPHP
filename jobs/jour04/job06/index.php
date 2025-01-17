@@ -1,3 +1,9 @@
+<!-- Créez un formulaire de type GET (se demander, pourquoi pas GET ?) avec un
+champ nommé nombre.
+Après validation du formulaire :
+➔ si la valeur entrée est un nombre pair, afficher “Nombre pair”
+➔ si c’est un nombre impair, afficher “Nombre impair” -->
+
 <?php
 if(empty($_GET)){
     
