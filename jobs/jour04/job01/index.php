@@ -1,6 +1,19 @@
 <!--Développez un algorithme qui affiche le nombre d’arguments $_GET.
 Tips : Pour tester votre code, créez un formulaire html de type GET.-->
 
+<?php
+
+$count = 0;
+
+foreach ($_GET as $key) {
+    $count++;
+}
+
+echo $count;
+
+var_dump($_GET);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,9 +35,10 @@ Tips : Pour tester votre code, créez un formulaire html de type GET.-->
     <button type="submit">Valider</button>
    </form> 
 
-
 </body>
 </html>
+
+
 
 
 
