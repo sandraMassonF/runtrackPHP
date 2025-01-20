@@ -5,8 +5,6 @@
 
 $str = "Les choses que l'on possede finissent par nous posseder";
 
-// $strReverse = strrev($str);
-// echo $strReverse . "<br>";
 
 $strToTab = str_split($str);
 
