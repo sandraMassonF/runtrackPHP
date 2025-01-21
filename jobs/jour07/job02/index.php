@@ -1,5 +1,5 @@
-<!-- Créez une variable nommée “nbvisites”. À chaque fois que la page est visitée, ajoutez 1. Affichez le contenu de cette variable.
-Ajoutez un bouton “reset” qui permet de réinitialiser ce compteur.-->
+<!-- Créez un cookie “nbvisites”. À chaque fois que la page est visitée, ajouter 1. Affichez le contenu du cookie.
+Ajoutez un bouton “reset” qui permet de réinitialiser le compteur.-->
 
 
 <?php
@@ -32,5 +32,6 @@ if(isset($_POST["reset"])){
     <p>Nombre de visites : <?= $_COOKIE['nbVisites']?></p>
     <form action="index.php" method="post">
         <button type="submit" name="reset">RESET</button>
+    </form>
 </body>
 </html>
