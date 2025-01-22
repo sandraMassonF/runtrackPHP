@@ -5,8 +5,6 @@ Ajoutez un bouton “reset” qui permet de réinitialiser la liste.-->
 
 <?php
 
-
-// Démarre la session
 session_start();
 
 
@@ -41,11 +39,6 @@ if (isset($_POST['reset'])) {
         <button type="submit" name="envoyer">ENVOYER</button>
         <br><br>
         <p><?php echo $_SESSION['prenoms'] . "<br>";?>
-        
-        <!--foreach($_SESSION as $value){
-            echo $value;
-         }-->
-    
         </p>
         <br><br>
         <button type="submit" name="reset">RESET</button>
