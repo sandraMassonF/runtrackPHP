@@ -6,9 +6,9 @@ $bdd = new PDO(
     'mysql:host=localhost;dbname=jour08','root',''
 );
 
-$query = $bdd->prepare("SELECT prenom, nom, naissance FROM etudiants WHERE sexe = 'femme'");
+$query = $bdd->prepare("SELECT nom, capacite FROM salles");
 $query ->execute();
-$etudiants = $query -> fetchAll(PDO::FETCH_ASSOC);
+$salles = $query -> fetchAll(PDO::FETCH_ASSOC);
 
 
 ?>
@@ -26,18 +26,16 @@ $etudiants = $query -> fetchAll(PDO::FETCH_ASSOC);
 <table>
     <thead>
     <tr>
-        <th>Prénom</th>
-        <th>Nom</th>        
-        <th>Naissance</th>        
+        <th>Nom</th>
+        <th>Capacité</th>        
     </tr>
     </thead>
     <tbody>
-        <?php foreach($etudiants as $etudiant){
+        <?php foreach($salles as $salle){
             echo "
             <tr>
-                <td>$etudiant[prenom]</td>
-                <td>$etudiant[nom]</td>                
-                <td>$etudiant[naissance]</td>                
+                <td>$salle[nom]</td>
+                <td>$salle[capacite]</td>                
             </tr>";
             };
         ?>            
