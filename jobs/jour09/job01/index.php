@@ -1,0 +1,2 @@
+<!-- En utilisant PHP et mysqli, connectez-vous à la base de données “jour08”. À l’aide d’une requête SQL, récupérez l’ensemble des informations de la table étudiants. Affichez le résultat de cette requête dans un tableau HTML. La première ligne de votre tableau html (thead) doit contenir le nom des champs. Les suivantes (tbody) doivent contenir les données présentes dans votre base de données. -->
+
