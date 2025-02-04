@@ -10,3 +10,32 @@ Résultat attendu : L'animal se nomme Luna -->
 
 <?php 
 
+class Animal{
+    public $age = 0;
+    public $prenom = "";
+
+
+    public function __construct(?int $age, ?string $prenom){
+        $this->age = $age;
+        $this->prenom = $prenom;
+    }
+
+    public function vieillir(){
+         $this->age += 1 ;
+        return "L'age de l'animal est $this->age an <br>";
+        
+    }
+
+    public function nommer($prenom){
+        $this->prenom = $prenom;
+        return "L'animal se nomme $this->prenom <br>";
+    }
+};
+
+$animal = new Animal(3, "toto");
+
+echo $animal->vieillir();
+echo $animal->vieillir();
+echo $animal->vieillir();
+
+echo $animal->nommer("luna");

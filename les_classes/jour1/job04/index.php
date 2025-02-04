@@ -34,12 +34,12 @@ class Point {
 
     public function changerX($newX){
         $this->x = $newX;
-        $changementX = "La nouvelle variable de X est : $this->x <br>";
+        $changementX = "La nouvelle valeur de X est : $this->x <br>";
         return $changementX;
     }
     public function changerY($newY){
         $this->y = $newY;
-        $changementY = "La nouvelle variable de Y est : $this->y <br>";
+        $changementY = "La nouvelle valeur de Y est : $this->y <br>";
         return $changementY;
     }
 
