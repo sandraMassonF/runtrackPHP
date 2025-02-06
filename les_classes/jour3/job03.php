@@ -61,18 +61,18 @@ class Parallelepipede extends Rectangle
 {
     protected $hauteur;
 
-    public function __construct(int $hauteur)
+    public function __construct(int $hauteur, int $longueur, int $largeur)
     {
         $this->hauteur = $hauteur;
-        parent::getLongueur();
-        parent::getLargeur();
+        parent::__construct($longueur, $largeur);
     }
 
     public function volume()
     {
-        $volume = $this->hauteur * $this->getLongeur() * $this->getLargeur();
+        $volume = ($this->hauteur * $this->getLongueur() * $this->getLargeur());
         return "Volume :  $volume";
     }
+
 };
 
 
@@ -83,5 +83,5 @@ echo "<br>";
 echo $rectangle->surface();
 echo "<br>";
 
-$parallelepipede = new Parallelepipede(6);
+$parallelepipede = new Parallelepipede(3,5,6);
 echo $parallelepipede->volume();
